@@ -1,0 +1,18 @@
+@import "@fontsource/figtree/400.css";
+@import "@fontsource/indie-flower/400.css";
+@import "tailwindcss";
+
+@theme {
+    --color-primary: var(--color-green-800);
+    --color-secondary: var(--color-amber-500);
+    --color-accent: var(--color-amber-500);
+    --font-indie-flower: "Indie Flower", cursive;
+}
+
+@layer components {
+    .card {
+        background-color: var(--color-green-50);
+        color: var(--color-gray-800);
+        font-family: "Figtree", sans-serif;
+    }
+}
