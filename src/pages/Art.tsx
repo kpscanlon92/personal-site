@@ -1,6 +1,6 @@
 import { art } from "../data/art";
 import Footer from "../components/Footer";
-import GallerySection from "../components/Gallery.tsx";
+import GallerySection from "../components/Gallery";
 
 export default function Art() {
     return (

@@ -1,4 +1,4 @@
-import { experience } from "../data/whoami";
+import { experience } from "../data/experience";
 
 export default function Experience() {
     return (

@@ -1,7 +1,7 @@
 import Hero from "../components/Hero";
 import Skills from "../components/Skills";
-import {projects} from "../data/projects.ts";
-import {art} from "../data/art.ts";
+import {projects} from "../data/projects";
+import {art} from "../data/art";
 import GallerySection from "../components/Gallery";
 import Footer from "../components/Footer";
 
