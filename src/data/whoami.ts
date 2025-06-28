@@ -43,6 +43,27 @@ export const socials : SocialLink[] = [
     }
 ];
 
+export interface EducationEntry {
+    school: string;
+    degree: string;
+    field: string;
+    period: string;
+    details?: string[];
+}
+
+export const education: EducationEntry[] = [
+    {
+        school: "University of California, Santa Cruz",
+        degree: "Bachelor of Science",
+        field: "Computer Engineering",
+        period: "2010 – 2014",
+        details: [
+            "Focus on digital design, embedded systems, and software development",
+            "Senior capstone in system-level hardware/software integration",
+        ],
+    },
+];
+
 export interface Experience {
     company: string;
     role: string;

@@ -1,18 +1,24 @@
 import Hero from "../components/Hero";
-import Skills from "../components/Skills.tsx";
-import Experience from "../components/Experience.tsx";
+import Skills from "../components/Skills";
 import {projects} from "../data/projects.ts";
 import {art} from "../data/art.ts";
-import GallerySection from "../components/Gallery.tsx";
+import GallerySection from "../components/Gallery";
+import Footer from "../components/Footer";
 
 export default function Home() {
     return (
         <>
-            <Hero />
-            <Skills />
-            <Experience />
-            <GallerySection title="Projects" items={projects} />
-            <GallerySection title="Art & Illustration" items={art} />
+            <div className="h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth">
+                <section className="min-h-screen snap-start">
+                    <Hero />
+                </section>
+                <section className="snap-start">
+                    <Skills />
+                    <GallerySection title="Projects" items={projects} />
+                    <GallerySection title="Art & Illustration" items={art} />
+                    <Footer />
+                </section>
+            </div>
         </>
     );
 }

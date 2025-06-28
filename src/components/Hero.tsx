@@ -2,7 +2,7 @@ import { me } from "../data/whoami";
 
 export default function Hero() {
     return (
-        <section className="p-4 md:h-[50vh] mx-auto md:w-[80vw] max-w-5xl content-center">
+        <section className="p-4 min-h-screen mx-auto md:w-[80vw] max-w-5xl content-center">
             <div className="md:flex md:flex-row gap-6 justify-items-center">
                 <div className="flex-none content-center">
                     {me.imageUrl && (

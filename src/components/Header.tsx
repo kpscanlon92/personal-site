@@ -22,6 +22,7 @@ export default function Header() {
                 {/* Desktop nav */}
                 <nav className="hidden sm:flex gap-6 font-medium text-sm">
                     <a href="/" className="hover:text-primary">Home</a>
+                    <a href="/resume" className="hover:text-primary">Resume</a>
                     <a href="/projects" className="hover:text-primary">Projects</a>
                     <a href="/art" className="hover:text-primary">Art</a>
                     <a href="/contact" className="hover:text-primary">Contact</a>
@@ -32,6 +33,7 @@ export default function Header() {
             {isOpen && (
                 <div className="sm:hidden mt-2 px-4 flex flex-col gap-2 text-sm">
                     <a href="/" className="hover:text-primary">Home</a>
+                    <a href="/resume" className="hover:text-primary">Resume</a>
                     <a href="/projects" className="hover:text-primary">Projects</a>
                     <a href="/art" className="hover:text-primary">Art</a>
                     <a href="/contact" className="hover:text-primary">Contact</a>
