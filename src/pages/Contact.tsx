@@ -1,18 +1,6 @@
 import { socials } from "../data/whoami";
-import { useNavigate } from "react-router-dom";
 
 export default function Contact() {
-    const navigate = useNavigate();
-
-    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-        if (import.meta.env.DEV) {
-            e.preventDefault(); // stop native submission
-            // simulate sending the form to Netlify (or pretend it was successful)
-            navigate("/success");
-        }
-        // Otherwise, in production, let Netlify handle it normally
-    };
-
     return (
         <>
             <section className="max-w-3xl mx-auto px-4 py-20 flex flex-col items-start gap-8 text-main">
@@ -46,7 +34,7 @@ export default function Contact() {
                     method="POST"
                     data-netlify="true"
                     className="mt-1 px-3 py-2 rounded-md w-full flex flex-col gap-4"
-                    onSubmit={handleSubmit}
+                    action="/success"
                 >
                     {/* Netlify hidden input (required) */}
                     <input type="hidden" name="form-name" value="contact" />
