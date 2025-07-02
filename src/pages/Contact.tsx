@@ -8,7 +8,7 @@ export default function Contact() {
         if (import.meta.env.DEV) {
             e.preventDefault(); // stop native submission
             // simulate sending the form to Netlify (or pretend it was successful)
-            navigate("/success");
+            navigate("/pages/success");
         }
         // Otherwise, in production, let Netlify handle it normally
     };
@@ -46,6 +46,7 @@ export default function Contact() {
                     method="POST"
                     data-netlify="true"
                     className="mt-1 px-3 py-2 rounded-md w-full flex flex-col gap-4"
+                    action="/pages/success"
                     onSubmit={handleSubmit}
                 >
                     {/* Netlify hidden input (required) */}
