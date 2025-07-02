@@ -2,10 +2,10 @@ import { experience } from "../data/experience";
 
 export default function Experience() {
     return (
-        <section className="max-w-5xl mx-auto px-4 py-20 text-main">
+        <section className="max-w-5xl mx-auto px-4 py-10 text-main">
             <h2 className="text-4xl font-bold mb-8 text-center font-indie-flower">Professional Experience</h2>
 
-            <div className="space-y-12">
+            <div className="space-y-10">
                 {experience.map((exp, idx) => (
                     <div key={idx}>
                         <div className="flex items-baseline justify-between">

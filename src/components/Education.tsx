@@ -2,9 +2,9 @@ import { education } from "../data/experience";
 
 export default function Education() {
     return (
-        <section className="max-w-4xl mx-auto px-4 py-20 text-main">
+        <section className="max-w-4xl mx-auto px-4 py-10 text-main">
             <h2 className="text-4xl font-bold text-center mb-12 font-indie-flower">Education</h2>
-            <div className="space-y-10">
+            <div className="space-y-6">
                 {education.map((ed, index) => (
                     <div key={index}>
                         <div className="flex justify-between items-baseline flex-wrap gap-2">

@@ -6,6 +6,7 @@ import Art from "./pages/Art";
 import Contact from "./pages/Contact";
 import ThankYou from "./pages/ThankYou";
 import Header from "./components/Header";
+import Footer from "./components/Footer.tsx";
 
 function App() {
     return (
@@ -20,6 +21,7 @@ function App() {
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/thank-you" element={<ThankYou />} />
                 </Routes>
+                <Footer />
             </Router>
         </section>
     );

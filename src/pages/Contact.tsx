@@ -1,6 +1,5 @@
 import { socials } from "../data/whoami";
 import { useNavigate } from "react-router-dom";
-import Footer from "../components/Footer";
 
 export default function Contact() {
     const navigate = useNavigate();
@@ -91,7 +90,6 @@ export default function Contact() {
                     </button>
                 </form>
             </section>
-            <Footer />
         </>
     );
 }

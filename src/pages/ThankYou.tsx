@@ -1,5 +1,3 @@
-import Footer from "../components/Footer";
-
 export default function ThankYou() {
     return (
         <>
@@ -9,7 +7,6 @@ export default function ThankYou() {
                     Your message has been sent. I’ll get back to you as soon as I can!
                 </p>
             </section>
-            <Footer />
         </>
 
     );

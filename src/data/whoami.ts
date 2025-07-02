@@ -12,9 +12,9 @@ export interface Me {
 export const me: Me = {
     firstName: "Kelly",
     lastName: "Scanlon",
-    intro: "I'm a queer, neurodivergent computer engineer and home grown artist. My professional background " +
+    intro: "I'm a queer, neurodivergent, computer engineer and home grown artist. My professional background " +
         "is in hardware validation, software QA, and verification. I have always had an interest " +
-        "puzzles, patterns, and building things.",
+        "puzzles, patterns, building things, and breaking things.",
     emoji: "👋",
     imageUrl: "/profilepic.jpeg",
 };
@@ -61,12 +61,12 @@ export const skills: SkillCategory[] = [
         skills: ["Python", "Bug Tracking", "Stress and Stability", "Concurrent Testing"],
     },
     {
-        category: "Frontend Web Dev",
+        category: "Frontend Web Development",
         description: "How is the UI looking on your website? Do you want to add some new features?",
         skills: ["React", "TypeScript", "Javascript", "Tailwind CSS", "HTML", "CSS", "Vite"],
     },
     {
-        category: "Backend Web Dev",
+        category: "Backend Web Development",
         description: "Need ways to add in database features or update the way that different parts of your website communicate with each other?",
         skills: ["Node.js", "Express", "MongoDB", "PostgreSQL", "REST APIs"],
     },

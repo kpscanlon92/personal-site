@@ -1,4 +1,3 @@
-
 export interface EducationEntry {
     school: string;
     degree: string;

@@ -1,19 +1,71 @@
 import { projects } from "../data/projects";
-import ProjectCard from "../components/ProjectCard";
-import Footer from "../components/Footer";
 
 export default function Projects() {
     return (
-        <>
-            <section className="px-4 py-16 max-w-6xl mx-auto">
-                <h2 className="text-4xl font-bold text-center mb-12 text-primary">Projects</h2>
-                <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-                    {projects.map((proj, i) => (
-                        <ProjectCard key={i} {...proj} />
-                    ))}
-                </div>
-            </section>
-            <Footer />
-        </>
+        <div className="max-w-6xl md:w-[60vw] mx-auto px-4 py-20 text-main">
+            <h1 className="text-5xl font-bold text-center mb-12 font-indie-flower">Projects</h1>
+
+            <div className="space-y-6">
+                {projects.map((proj, i) => (
+                    <div key={i}
+                        className="border border-neutral rounded-lg shadow-sm overflow-hidden bg-white">
+                        <div className="px-6 max-h-[1000px] py-4 opacity-100">
+                            <span className="text-lg font-semibold text-primary">{proj.title}</span>
+                            <div className="space-y-4">
+                                {proj.image && (
+                                    <img
+                                        src={proj.image}
+                                        alt={proj.title}
+                                        className="rounded w-full max-h-60 object-cover"
+                                    />
+                                )}
+
+                                <p className="text-sm">{proj.description}</p>
+
+                                {proj.details?.features && (
+                                    <div>
+                                        <h3 className="font-semibold">Features</h3>
+                                        <ul className="list-disc list-inside text-sm space-y-1">
+                                            {proj.details.features.map((f, j) => (
+                                                <li key={j}>{f}</li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                )}
+
+                                {proj.details?.techStack && (
+                                    <p className="text-sm">
+                                        <strong>Tech stack:</strong> {proj.details.techStack.join(", ")}
+                                    </p>
+                                )}
+
+                                <div className="flex gap-4 mt-2">
+                                    {proj.github && (
+                                        <a
+                                            href={proj.github}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="text-primary underline"
+                                        >
+                                            GitHub
+                                        </a>
+                                    )}
+                                    {proj.link && (
+                                        <a
+                                            href={proj.link}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="text-primary underline"
+                                        >
+                                            Live Demo
+                                        </a>
+                                    )}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                ))}
+            </div>
+        </div>
     );
 }

@@ -1,5 +1,6 @@
 export interface GalleryItem {
     title: string;
+    slug: string;
     imageUrl?: string;
     description?: string;
     link?: string;
@@ -38,7 +39,7 @@ export default function GallerySection({
                             )}
                             {item.link && (
                                 <a
-                                    href={item.link}
+                                    href={item.slug}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="text-primary text-sm mt-2 inline-block hover:underline"
