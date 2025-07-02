@@ -46,7 +46,7 @@ export default function Contact() {
                     method="POST"
                     data-netlify="true"
                     className="mt-1 px-3 py-2 rounded-md w-full flex flex-col gap-4"
-                    action="/pages/success"
+                    action="/success"
                     onSubmit={handleSubmit}
                 >
                     {/* Netlify hidden input (required) */}
