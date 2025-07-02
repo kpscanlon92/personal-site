@@ -1,4 +1,4 @@
-export default function ThankYou() {
+export default function Success() {
     return (
         <>
             <section className="mt-14 flex flex-col items-center justify-center px-4 text-center text-main">

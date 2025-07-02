@@ -8,7 +8,7 @@ export default function Contact() {
         if (import.meta.env.DEV) {
             e.preventDefault(); // stop native submission
             // simulate sending the form to Netlify (or pretend it was successful)
-            navigate("/thank-you");
+            navigate("/success");
         }
         // Otherwise, in production, let Netlify handle it normally
     };

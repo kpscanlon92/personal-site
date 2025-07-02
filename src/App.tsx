@@ -4,7 +4,7 @@ import Resume from "./pages/Resume";
 import Projects from "./pages/Projects";
 import Art from "./pages/Art";
 import Contact from "./pages/Contact";
-import ThankYou from "./pages/ThankYou";
+import Success from "./pages/Success.tsx";
 import Header from "./components/Header";
 import Footer from "./components/Footer.tsx";
 
@@ -19,7 +19,7 @@ function App() {
                     <Route path="/projects" element={<Projects />} />
                     <Route path="/art" element={<Art />} />
                     <Route path="/contact" element={<Contact />} />
-                    <Route path="/thank-you" element={<ThankYou />} />
+                    <Route path="/success" element={<Success />} />
                 </Routes>
                 <Footer />
             </Router>
