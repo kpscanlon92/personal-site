@@ -17,7 +17,7 @@ export const projects: Project[] = [
     {
         title: "Moods App",
         description: "A full stack mood tracking questionaire with historical data.",
-        image: "",
+        image: "/moodsUI.png",
         link: "https://moods-frontend.onrender.com/pages/login",
         github: "https://github.com/kpscanlon92/moods",
         details: {

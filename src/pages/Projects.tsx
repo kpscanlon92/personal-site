@@ -9,18 +9,17 @@ export default function Projects() {
                 {projects.map((proj, i) => (
                     <div key={i}
                         className="border border-neutral rounded-lg shadow-sm overflow-hidden bg-white">
-                        <div className="px-6 max-h-[1000px] py-4 opacity-100">
+                        <div className="px-6 py-4">
                             <span className="text-lg font-semibold text-primary">{proj.title}</span>
+                            <p className="text-sm mb-2">{proj.description}</p>
                             <div className="space-y-4">
                                 {proj.image && (
                                     <img
                                         src={proj.image}
                                         alt={proj.title}
-                                        className="rounded w-full max-h-60 object-cover"
+                                        className="border border-neutral rounded w-full object-cover"
                                     />
                                 )}
-
-                                <p className="text-sm">{proj.description}</p>
 
                                 {proj.details?.features && (
                                     <div>
