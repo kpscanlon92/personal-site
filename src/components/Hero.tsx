@@ -15,7 +15,7 @@ export default function Hero() {
                 </div>
                 <div className="content-center text-center md:text-left">
                     <h1 className="text-5xl font-bold mb-4 font-indie-flower">
-                        Hi, my name is <a className="text-primary"> {me.firstName} </a>{me.emoji}
+                        Hi, my name is <a className="text-primary"> {me.firstName} </a>
                     </h1>
                     <p className="text-xl">
                         {me.intro}

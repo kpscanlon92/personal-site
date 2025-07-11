@@ -5,7 +5,6 @@ export interface Me {
     firstName: string;
     lastName: string;
     intro: string;
-    emoji: string;
     imageUrl?: string;
 }
 
@@ -15,7 +14,6 @@ export const me: Me = {
     intro: "I'm a queer, neurodivergent, computer engineer and home grown artist. My professional background " +
         "is in hardware validation, software QA, and verification. I have always had an interest " +
         "puzzles, patterns, building things, and breaking things.",
-    emoji: "👋",
     imageUrl: "/profilepic.jpeg",
 };
 
