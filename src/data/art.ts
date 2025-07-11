@@ -1,5 +1,5 @@
 export interface ArtItem {
-    title: string;
+    title?: string;
     image: string;
     description?: string;
 }
@@ -35,5 +35,58 @@ export const artData: Record<string, ArtSeries> = {
                 image: "/petportraits/alanna.jpeg",
             },
         ]
+    },
+    "Art Camp 2025 Combined Watercolor": {
+        description: "An exercise done during Art Camp for Adults 2025 at Ulna Studio with instructor Lettie Jane: " +
+            "https://www.lettiejane.com. Each person in the class had 5 minutes with the painting and a picture was" +
+            " taken after ever rotation.",
+        pieces: [
+            {
+                image: "/artcamp2025/watercolor_15.jpeg",
+            },
+            {
+                image: "/artcamp2025/watercolor_14.jpeg",
+            },
+            {
+                image: "/artcamp2025/watercolor_13.jpeg",
+            },
+            {
+                image: "/artcamp2025/watercolor_12.jpeg",
+            },
+            {
+                image: "/artcamp2025/watercolor_11.jpeg",
+            },
+            {
+                image: "/artcamp2025/watercolor_10.jpeg",
+            },
+            {
+                image: "/artcamp2025/watercolor_9.jpeg",
+            },
+            {
+                image: "/artcamp2025/watercolor_8.jpeg",
+            },
+            {
+                image: "/artcamp2025/watercolor_7.jpeg",
+            },
+            {
+                image: "/artcamp2025/watercolor_6.jpeg",
+            },
+            {
+                image: "/artcamp2025/watercolor_5.jpeg",
+            },
+            {
+                image: "/artcamp2025/watercolor_4.jpeg",
+            },
+            {
+                image: "/artcamp2025/watercolor_3.jpeg",
+            },
+            {
+                image: "/artcamp2025/watercolor_2.jpeg",
+            },
+            {
+                image: "/artcamp2025/watercolor_1.jpeg",
+            },
+        ]
     }
+
 }
